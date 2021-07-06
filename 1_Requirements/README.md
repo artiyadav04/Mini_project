@@ -43,13 +43,16 @@ This project is useful for admins to add or search customer details from the men
 # High Level Requirements
 ID   | Description | Status
 -----| ------------|-------
-HR_01|  Admin able to add customer Detail           | Implemented
-HR_02|  Admin able to search customer Detail         |Implemented
-HR_03|  Admin should be able to Exit                 |Implemented
+HR01|  Admin able to add customer Detail           | Implemented
+HR02|  Admin able to search customer Account         |Implemented
+HR03|  Admin should be able to Exit                 |Implemented
 
 # Low Level Requirements
-
-
+ID   | Description | HLR Id|Status
+-----| ------------|-------|------
+LR01 |Admin can add details of customer|HR01|Implemented
+LR02 |Admin can search customer account|HR02|Implemented
+LR03 |Admin shall be able to exit      |HR03|Implemented
 
 
 
