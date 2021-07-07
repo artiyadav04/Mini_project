@@ -6,7 +6,7 @@ Customer Billing System is a simple application which can be used in any departm
 
 ## __Reasearch:__
 
-The Number of customers comming to the shop and the report of their records and their due payment is not easy to keep track of and performing the task manually requires lot of paper works.It can hold any number of accounts and account can be added to the program at any time.This project also provides the facility of searching the account by name of the customer.
+The Number of customers coming to the shop and the report of their records and their due payment is not easy to keep track of and performing the task manually requires lot of paper works.It can hold any number of accounts and account can be added to the program at any time.This project also provides the facility of searching the account by name of the customer.
 
 ## __Cost and Features:__
 
