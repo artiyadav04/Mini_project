@@ -54,6 +54,3 @@ LR01 |Admin can add details of customer|HR01|Implemented
 LR02 |Admin can search customer account|HR02|Implemented
 LR03 |Admin shall be able to exit      |HR03|Implemented
 
-# SWOT Analysis 
-
-![alt SWOT](https://user-images.githubusercontent.com/86519831/124974205-26e9f280-e04a-11eb-9985-11340f6b187b.PNG)
