@@ -5,13 +5,13 @@ BUILD_DIR = BUILD
 CFLAGS = -Wall -g
 
 SRC = main.c\
-	  src/*.c
+      src/*.c
 
 
 INC = inc
 
 $(BUILD_DIR):
-		mkdir $(BUILD_DIR)
+	mkdir $(BUILD_DIR)
 
 INC_TEST = -Iinc -Iunity
 
