@@ -53,4 +53,3 @@ ID   | Description | HLR Id|Status
 LR01 |Admin can add details of customer|HR01|Implemented
 LR02 |Admin can search customer account|HR02|Implemented
 LR03 |Admin shall be able to exit      |HR03|Implemented
-
