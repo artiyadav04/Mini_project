@@ -17,12 +17,11 @@ __Cost:__
 The project "Customer Billing System" is developed with a low costs and is designed using best easy to understand software.
 
 ## __Benefits__
-  
 1. Easy to use and understand.
-1. Reducing man power
-1. Faster performance
-1. Reducing wastage of paper
-1. Secure and consistent.
+2. Reducing man power
+3. Faster performance
+4. Reducing wastage of paper
+5. Secure and consistent.
 
 ## 4W's and 1'H
 ### Who
