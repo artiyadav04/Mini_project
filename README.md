@@ -12,8 +12,7 @@ Folder | Description
 2_Design |	Structural and Behavioural UML Diagrams for High Level and Low level
 3_Implementation|	All code and documentation
 4_Test Plan and Output| Documents with test plans and procedure
-5_Report	|Generated Report
-6_ImagesandVideos|	All the required images and videos
+5_ImagesandVideos|	All the required images and videos
 
 ## Contributors List and Summary
 SF Id. |	Name |	Features	|	Number of Test Cases|	Test Case Pass
