@@ -1,31 +1,56 @@
 # Target name : dependencies
 #<TAB> command 
-SRC = main.c \
-src/add.c\
-src/writefile.c\
-src/search.c\
-src/output.c 
+TEST_PROJ_NAME = Mini_project
+BUILD_DIR = BUILD
+CFLAGS = -Wall -g
 
-OBJ= main.o \
-add.o\
-writefile.o\
-search.o\
-output.o 
+SRC = main.c\
+	  src/*.c
+
 
 INC = inc
-CFLAGS = -I$(INC)
 
-all.out : $(OBJ)
-	gcc $^ -I$(INC) -o $@
+$(BUILD_DIR):
+		mkdir $(BUILD_DIR)
 
-%.o : src/%.c 
-	gcc $^ -I$(INC) -c
+INC_TEST = -Iinc -Iunity
 
+OUTPUT =$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC)
 
-run: target
-	./all.out
+TEST_SRC = src/*c\
+test/Billing_test.c\
+unity/unity.c\
 
-clean:
-	rm all.out  *.o src/*.o
+TEST_OUTPUT = $(BUILD_DIR)/Test_$(TEST_PROJ_NAME).$(EXEC)
 
+ifdef OS
+   RM = del /q
+   FixPath = $(subst /,\,$1)
+   EXEC = exe
+else
+   ifeq ($(shell uname), Linux)
+      RM = rm -rf
+      FixPath = $1
+	  EXEC = out
+   endif
+endif
 
+all : $(SRC) $(BUILD_DIR)
+	gcc -I $(INC) $(SRC) -o $(call FixPath,$(OUTPUT)) 
+
+run : all
+	$(call FixPath,$(OUTPUT))
+
+clean :
+	$(RM) $(call FixPath,$(BUILD_DIR)/*)
+
+valgrind :
+	valgrind $(call FixPath,$(TEST_OUTPUT))
+
+coverageCheck:$(BUILD_DIR)
+	g++ -fprofile-arcs -ftest-coverage -fPIC -O0 $(SRC) $(INC_TEST) -o $(OUTPUT)
+	./$(OUTPUT)
+ 
+test:$(BUILD_DIR)
+	gcc $(TEST_SRC) $(INC_TEST) -o $(TEST_OUTPUT)
+	./$(TEST_OUTPUT)
